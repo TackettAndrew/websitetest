@@ -29,7 +29,8 @@ nav {
   margin-right: 10px;
   z-index: 1;
   background-color: transparent;
-  border: none; }
+  border: none;
+  outline: none; }
   .hamburger-button img {
     height: 20px; }
 
