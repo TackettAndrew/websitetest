@@ -1,64 +1,86 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-.sponsors {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  align-content: stretch; }
-  .sponsors h1 {
-    display: inline-block;
-    color: #111111; }
-
-nav {
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-  transition: ease-in 0.1s; }
-
-.hamburger-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  text-decoration: none;
-  margin-right: 10px;
-  z-index: 1;
-  background-color: transparent;
-  border: none;
-  outline: none; }
-  .hamburger-button img {
-    height: 20px; }
-
-.nav-button {
-  color: #fff;
-  display: inline-block;
-  font-size: 10px;
-  padding: 1em;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: ease-in .1s;
-  text-decoration: none; }
-  .nav-button:hover {
-    background: rgba(0, 0, 0, 0.2); }
-
-.sm-button {
-  height: 25px; }
-
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
 .home-header {
   background-image: url(../images/tye-dye.jpg);
   background-size: cover;
   text-align: center; }
   .home-header .logo {
     height: 20em;
-    margin: 2em; }
+    margin: 2em;
+    margin-bottom: .5em; }
+  .home-header .shadow {
+    height: 10px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%); }
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .row {
+    width: 100%; }
+  .row h1 {
+    display: block;
+    color: #111111; }
+  .row p {
+    max-width: 60em;
+    padding: 0 1.33em; }
+
+.grey {
+  background: #eee; }
+
+.email-form {
+  width: 100%; }
+  .email-form input {
+    display: block;
+    padding: 1em;
+    margin: 1em; }
+  .email-form textarea {
+    display: block;
+    padding: 1em;
+    margin: 1em; }
+  .email-form button {
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    background: #00aeed;
+    color: white;
+    font-family: 'Montserrat', sans-serif; }
+
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+  max-width: 60em;
+  flex-wrap: wrap; }
+  .sponsors .logos {
+    width: 14em;
+    padding: 2em; }
+
+.social img {
+  height: 5em;
+  margin: 1.33em; }
 
 body {
-  overflow-x: hidden;
   margin: 0; }
-  body h1 {
+
+.site-container {
+  position: absolute;
+  margin: 0;
+  width: 100%; }
+  .site-container h1, .site-container h2, .site-container h3, .site-container h4, .site-container h5, .site-container h6 {
     font-family: 'Montserrat', sans-serif; }
+  .site-container p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1em;
+    line-height: 1.75em; }
+  .site-container .button {
+    padding: 1em;
+    margin: 1em;
+    border: solid #00aeed .2em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer; }
+  .site-container .button:hover {
+    border: solid #00aeed .2em;
+    background-color: #00aeed;
+    color: white; }
