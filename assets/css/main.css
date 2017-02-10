@@ -47,12 +47,12 @@
 .email-form input {
   width: 30em;
   display: block;
-  padding: 1em;
+  padding: 1em 0;
   margin: 1em 0; }
 .email-form textarea {
   width: 30em;
   display: block;
-  padding: 1em;
+  padding: 1em 0;
   margin: 1em 0; }
 .email-form button {
   display: block;
