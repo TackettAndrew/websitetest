@@ -16,7 +16,8 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: center; }
   .row {
     width: 100%; }
   .row h1 {
@@ -25,41 +26,108 @@
   .row p {
     max-width: 60em;
     padding: 0 1.33em; }
+  .row .logo {
+    width: 10em;
+    padding: 1em; }
 
 .grey {
   background: #eee; }
 
-.email-form {
-  width: 100%; }
-  .email-form input {
-    display: block;
-    padding: 1em;
-    margin: 1em; }
-  .email-form textarea {
-    display: block;
-    padding: 1em;
-    margin: 1em; }
-  .email-form button {
-    display: block;
-    padding: 1em;
-    margin: 1em;
-    border: none;
-    background: #00aeed;
-    color: white;
-    font-family: 'Montserrat', sans-serif; }
-
+/*(specific Flexbox Properties for Modules*/
 .sponsors {
   display: flex;
   justify-content: space-around;
   max-width: 60em;
   flex-wrap: wrap; }
-  .sponsors .logos {
-    width: 14em;
-    padding: 2em; }
 
 .social img {
   height: 5em;
-  margin: 1.33em; }
+  margin: .5em; }
+
+.email-form input {
+  width: 30em;
+  display: block;
+  padding: 1em;
+  margin: 1em 0; }
+.email-form textarea {
+  width: 30em;
+  display: block;
+  padding: 1em;
+  margin: 1em 0; }
+.email-form button {
+  display: block;
+  padding: 1em;
+  margin: 1em 0;
+  border: none;
+  background: #00aeed;
+  color: white;
+  font-family: Montserrat;
+  font-weight: bold;
+  margin: 0 auto; }
+
+nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  transition: ease-in 0.1s; }
+  nav .spacer {
+    height: 54px; }
+
+.hamburger-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  outline: none; }
+  .hamburger-button img {
+    height: 20px; }
+
+.nav-button {
+  color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  padding: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: ease-in .1s;
+  text-decoration: none; }
+  .nav-button:hover {
+    background: rgba(0, 0, 0, 0.2); }
+
+.sm-button {
+  height: 25px; }
+
+@media (min-width: 600px) {
+  .hamburger-button {
+    display: none; }
+
+  nav {
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    right: 0; }
+    nav .spacer {
+      display: none; } }
+.footer {
+  background-color: #111111; }
+  .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+    color: white;
+    padding: 3em 0; }
+  .footer img {
+    display: inline-block;
+    height: 4em;
+    padding-right: 1em; }
+
+.footer-shadow {
+  height: 10px;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.6) 100%); }
 
 body {
   margin: 0; }
