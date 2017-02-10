@@ -12,24 +12,6 @@
     height: 10px;
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%); }
 
-.row {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center; }
-  .row {
-    width: 100%; }
-  .row h1 {
-    display: block;
-    color: #111111; }
-  .row p {
-    max-width: 60em;
-    padding: 0 1.33em; }
-  .row .logo {
-    width: 10em;
-    padding: 1em; }
-
 .grey {
   background: #eee; }
 
