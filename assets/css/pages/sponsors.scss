@@ -1,0 +1,11 @@
+.sponsors {
+    display: flex;
+    justify-content: center;
+    max-width: 60em;
+    flex-wrap: wrap;
+    align-content: baseline;
+    .logo {
+        width: 10em;
+        padding: 2em;
+    }
+}

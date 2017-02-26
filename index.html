@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <script src="/prefixfree.min.js"></script>
 </head>
-<body>
 
-<header class="home-header">
-  <button class="hamburger-button" onclick="button()"><img src="assets\images\button-01.png"></button>
-<nav id="hamburger-menu" style="right: -100px;">
-    <div style="height: 54px;"></div>
-    <a href="#" class="nav-button"><h1>HOME</h1></a>
-    <a href="#" class="nav-button"><h1>HISTORY</h1></a>
-    <a href="#" class="nav-button"><h1><img src="assets\images\twitter.png" class="sm-button"></h1></a>
-    <a href="#" class="nav-button"><h1><img src="assets\images\youtube.png" class="sm-button"></h1></a>
-    <a href="#" class="nav-button"><h1><img src="assets\images\facebook.png" class="sm-button"></h1></a>
-</nav>
 
-<script>
-function button() {
-    var menu = document.getElementById("hamburger-menu");
-
-    if (menu.style.right == "-100px") {
-        menu.style.right = 0;
-    } else {
-        menu.style.right = "-100px";
-    }
-}
-</script>
-
-  <img  class="logo" src="assets/images/OfficialLogoWhite.png">
-</header>
-
-<div class="sponsors">
-    <h1>SPONSORS</h1>
+<div class="home-nav nav row">
+    <a href="/"><img class="logo-5431" src="assets/images/5431Logo.png"></a>
+    <div style="flex: 1;"></div>
+    <div style="position: relative;">
+        <a href="/about.html" class="home-nav-button nav-button">About Us</a>
+        <a href="/blog.html" class="home-nav-button nav-button">Blog</a>
+        <a href="/sponsors.html" class="home-nav-button nav-button">Sponsors</a>
+        <a href="/contact.html" class="home-nav-button nav-button">Contact Us</a>
+    </div>
 </div>
 
+
+<body>
+    <div class="site-container">
+        <div class="home-header row">
+            <img src="/assets/images/home/LogoWhite.svg">
+        </div>
+    </div>
 </body>
 </html>
